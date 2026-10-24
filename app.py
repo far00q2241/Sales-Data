@@ -53,8 +53,10 @@ discount_amount = st.number_input(
 shipping_days = st.number_input(
     "Shipping Days", min_value=0, value=3
 )
-satisfaction = st.slider(
-    "Customer Satisfaction", 1, 5, 3
+satisfaction = st.selectbox(
+    "Customer Satisfaction",
+    [1, 2, 3, 4, 5],
+    index=2
 )
 
 region = st.selectbox(
